@@ -1,0 +1,35 @@
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h1>The input formenctype attribute</h1>
+
+<p>The formenctype attribute specifies how the form data should be encoded when submitted.</p>
+
+<form action="/action_page_binary.asp" method="post">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <input type="submit" value="Submit">
+  <input type="submit" formenctype="multipart/form-data" value="Submit as Multipart/form-data">
+</form>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The input formenctype attribute</h1>
+
+<p>The formenctype attribute specifies how the form data should be encoded when submitted, which is crucial for handling raw audio binaries versus simple band data.</p>
+
+<form action="/text_only.php" method="post">
+  <label for="band_bio">Band Bio:</label><br>
+  <input type="text" id="band_bio" name="band_bio"><br><br>
+  <input type="submit" value="Submit Text Only">
+  <input type="submit" formenctype="multipart/form-data" value="Submit with Audio/Images">
+</form>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h1>The input pattern attribute</h1>
+
+<p>The pattern attribute specifies a regular expression that the input element's value is checked against.</p>
+
+<form action="/action_page.php">
+  <label for="country_code">Country code:</label>
+  <input type="text" id="country_code" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The input pattern attribute</h1>
+
+<p>The pattern attribute uses a regular expression to validate the input, ensuring it follows the strict naming conventions of our Metal archive.</p>
+
+<form action="/action_page.php">
+  <label for="genre_code">Enter Genre Code (3 Uppercase Letters):</label><br><br>
+  <input type="text" id="genre_code" name="genre_code" 
+         pattern="[A-Z]{3}" 
+         title="Please enter a 3-letter uppercase code (e.g., GRN, MET, SHG)" 
+         placeholder="e.g. GRN"><br><br>
+  
+  <input type="submit" value="Register Genre">
+</form>
+
+<p>Try entering 'grunge' (lowercase) or 'METAL' (more than 3 letters) to see the validation error.</p>
+
+</body>
+</html>

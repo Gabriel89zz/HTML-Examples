@@ -1,0 +1,50 @@
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h1>The input list attribute</h1>
+
+<p>The list attribute refers to a datalist element that contains pre-defined options for an input element.</p>
+
+<form action="/action_page.php">
+  <input list="browsers" name="browser">
+  <datalist id="browsers">
+    <option value="Edge">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The input list attribute</h1>
+
+<p>The list attribute connects an input to a datalist, providing a "search-as-you-type" menu for your favorite subgenres and bands.</p>
+
+<form action="/action_page.php">
+  <label for="music-choice">Choose a Band or Genre:</label><br><br>
+  <input list="genres-bands" name="music-choice" id="music-choice" placeholder="Start typing...">
+  <datalist id="genres-bands">
+    <option value="Nirvana">
+    <option value="My Bloody Valentine">
+    <option value="Korn">
+    <option value="Deftones">
+    <option value="Alice in Chains">
+    <option value="Slowdive">
+    <option value="System of a Down">
+    <option value="Metallica">
+  </datalist>
+  <br><br>
+  <input type="submit" value="Select">
+</form>
+
+</body>
+</html>

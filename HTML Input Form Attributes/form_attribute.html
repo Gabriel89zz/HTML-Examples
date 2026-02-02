@@ -1,0 +1,42 @@
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h1>The input form attribute</h1>
+
+<p>The form attribute specifies the form an input element belongs to.</p>
+
+<form action="/action_page.php" id="form1">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p>The "Last name" field below is outside the form element, but still part of the form.</p>
+
+<label for="lname">Last name:</label>
+<input type="text" id="lname" name="lname" form="form1">
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The input form attribute</h1>
+
+<p>The form attribute allows you to link an input to a specific form even if it is placed outside the form's tags—useful for complex layouts in your music database.</p>
+
+<form action="/action_page.php" id="record-label-form">
+  <label for="band_name">Band Name:</label><br>
+  <input type="text" id="band_name" name="band_name"> <br><br>
+  <input type="submit" value="Register Band">
+</form>
+
+<p>The field below is physically outside the form element, but it is still part of the submission because of the <strong>form="record-label-form"</strong> attribute.</p>
+
+<label for="singer">Lead Singer:</label><br>
+<input type="text" id="singer" name="singer" form="record-label-form">
+</body>
+</html>

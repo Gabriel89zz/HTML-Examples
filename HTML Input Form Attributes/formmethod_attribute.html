@@ -1,0 +1,40 @@
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h1>The input formmethod Attribute</h1>
+
+<p>The formmethod attribute defines the HTTP method for sending form-data to the action URL.</p>
+
+<form action="/action_page.php" method="get" target="_blank">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit using GET">
+  <input type="submit" formmethod="post" value="Submit using POST">
+</form>
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The input formmethod Attribute</h1>
+
+<p>The formmethod attribute defines the HTTP method for sending data. Use GET for searching the archive and POST for adding new metal tracks to the server.</p>
+
+<form action="/music_database.php" method="get" target="_blank">
+  <label for="artist">Artist/Band:</label><br>
+  <input type="text" id="artist" name="artist"><br><br>
+  <label for="album">Album Title:</label><br>
+  <input type="text" id="album" name="album"><br><br>
+  <input type="submit" value="Search GET">
+  <input type="submit" formmethod="post" value="Add to Archive POST">
+</form>
+
+</body>
+</html>
